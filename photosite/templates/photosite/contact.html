@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+    .form-control {
+        padding: 15px;
+    margin: 15px;
+    border-color: #FF5722;
+    /* border-style: groove; */
+    /* border-block-start-style: none; */
+    border-radius: 10px;
+    border-left-width: thick;
+    font-style: oblique;
+    font-family: cursive;
+    font-size: larger;
+    }
+</style>
+<div class="container">
+    <h3 style="text-align: center; font-color: red;">Get in Touch</h3>
+    <h4 style="text-align: center; font-color: red;">And so the Adventure begins..</h4>
+    <form>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Bride's Name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Groom's Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Phone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="referrals">
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+    <button type="submit" class="btn btn-outline-danger">Send Message</button>
+
+  </div>
+
+    </form>
+</div>
+{% endblock %}

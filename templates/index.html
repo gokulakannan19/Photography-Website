@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Wetwest</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'css/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row2">
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('{% static "photosite/White 2.png" %}');">
+  <div id="pageintro" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <article>
+      <div>
+        <p class="heading">Photography site</p>
+        <h2 class="heading">Pixel photos</h2>
+        <p>Welcome to the Studio</p>
+      </div>
+      <footer>
+        <ul class="nospace inline pushright">
+          <li><a class="btn inverse" href="{% url 'home' %}">Enter</a></li>
+
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang=en>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+</head>
+
+<body>
+
+<style type="text/css">
+
+    .container {
+        background-image: {% static 'photosite/white 2.png' %};
+        background-color: blue;
+    }
+
+    .btn {
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 25%;
+    }
+
+</style>
+<div class="main">
+    <div class="container">
+        <div class="btn">
+            <a href="{% url 'home' %}"><button type="button" class="btn btn-outline-danger btn-lg">Click here</button></a>
+        </div>
+        <div class="img">
+            <img class="img-fluid" src="{% static 'photosite/white 2.png' %}" alt="">
+        </div>
+
+    </div>
+</div>
+<script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>-->

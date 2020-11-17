@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<style>
+    .about-txt{
+        font-size: large;
+    font-style: oblique;
+    font-family: fangsong;
+    }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>About us</h2>
+        <br><br>
+        <p class="about-txt">Our spirited photographers, cinematographers, designers & editors immensely love people, sentiments & cultural uniqueness. This makes us the perfect team for preserving your weddings for a lifetime!</p>
+    </div>
+    <div class="col">
+      <img src="{% static 'photosite/aboutus_photography.jpeg' %}">
+    </div>
+  </div>
+</div>
+{% endblock %}

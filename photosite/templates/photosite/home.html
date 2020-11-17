@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="wrapper bgded overlay" style="background-image:url('{% static "photosite/image6.jpg" %}');">
+<div id="pageintro" class="hoc clear">
+  <!-- ################################################################################################ -->
+  <article>
+    <div>
+      <p class="heading">Shutter Photography</p>
+      <h2 class="heading">Pixel photos</h2>
+      <p>Welcome to out studio</p>
+    </div>
+
+  </article>
+  <!-- ################################################################################################ -->
+</div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Get to Know Us</h2>
+      <br><br>
+      <p class="get-txt" style="font-size: large; font-family: sans-serif;">A Titan Studio blends fine art and documentary styles in commercial photography. Your wedding photographs are your personal memoir and a familial document with soul; your emotionally rich moments and intricately detailed events recorded with strong visual sensibility.
+
+        Our spirited photographers, cinematographers, designers and editors immensely love people, sentiments and cultural uniqueness and this makes us the perfect team for preserving your weddings for a lifetime!</p>
+    </div>
+    <div class="col">
+      <img src="{% static 'photosite/aboutus_photography.jpeg' %}">
+    </div>
+  </div>
+</div>
+<div>
+  <div class="container">
+    <br>
+    <h2 align="center">Recent Stories</h2>
+    <br>
+    <div class="card-deck">
+      <div class="card">
+        <img src="{% static 'photosite/image1.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wedding</h5>
+          <p class="card-text">Aishwarya + Gowtham</p>
+        </div>
+
+      </div>
+      <div class="card">
+        <img src="{% static 'photosite/image2.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wedding</h5>
+          <p class="card-text">Aishwarya + Gowtham</p>
+        </div>
+
+      </div>
+      <div class="card">
+        <img src="{% static 'photosite/image3.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wedding</h5>
+          <p class="card-text">Aishwarya + Gowtham</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center">
+    <button type="button" class="btn btn-outline-danger">View More</button>
+
+  </div>
+</div>
+{% endblock %}
