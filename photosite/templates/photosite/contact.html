@@ -20,26 +20,26 @@
 <div class="container">
     <h3 style="text-align: center; font-color: red;">Get in Touch</h3>
     <h4 style="text-align: center; font-color: red;">And so the Adventure begins..</h4>
-    <form>
+    <form method="post">{% csrf_token %}
         <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Bride's Name">
+                <input type="text" class="form-control" placeholder="Bride's Name" name="bride_name">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Groom's Name">
+                <input type="text" class="form-control" placeholder="Groom's Name" name="groom_name">
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <input type="email" class="form-control" placeholder="Email">
+                <input type="email" class="form-control" placeholder="Email" name="email">
             </div>
             <div class="col">
-                <input type="number" class="form-control" placeholder="Phone">
+                <input type="number" class="form-control" placeholder="Phone" name="phone">
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="referrals">
+                <input type="text" class="form-control" placeholder="referrals" name="referrals">
             </div>
         </div>
         <br>

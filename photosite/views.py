@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Contact
 
 
 # Create your views here.
@@ -28,4 +28,17 @@ def wedding(request):
 
 
 def contact(request):
-    return render(request, 'photosite/contact.html', {})
+    if request.method == "POST":
+        bride_name = request.POST['bride_name']
+        groom_name = request.POST['groom_name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        referrals = request.POST['referrals']
+
+        Contact.objects.create(bride_name=bride_name, groom_name=groom_name, email=email, phone=phone, referrals=referrals)
+        return render(request, 'photosite/contact.html', {})
+    else:
+        return render(request, 'photosite/contact.html', {})
+
+
+
